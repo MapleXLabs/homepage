@@ -1,0 +1,48 @@
+/*
+ * styles.css
+ *
+ * This stylesheet provides simple styling to center the SVG logo
+ * vertically and horizontally within the viewport. It also defines
+ * basic dimensions for the logo image and gives the page a light
+ * background color. Feel free to adjust the colors, font sizes,
+ * or dimensions to suit your preferences.
+ */
+
+/* Reset default margin and use flexbox to center content */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /*
+     * Dark background makes a white SVG logo stand out. You can adjust this
+     * color to match your brand or personal preference. A nearly black
+     * shade (#1a2238) provides good contrast for the white logo while
+     * remaining easy on the eyes.
+     */
+    background-color: #1a2238;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container around the logo, ensures it remains centered */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Dimensions for the logo image */
+/*
+ * For an externally supplied logo (white on transparent background), set
+ * a maximum width and allow the height to scale automatically to
+ * preserve the original aspect ratio. This ensures the logo remains
+ * crisp on both desktop and mobile displays. Adjust the max-width as
+ * needed for your design.
+ */
+.logo {
+    max-width: 300px;
+    height: auto;
+}
