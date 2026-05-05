@@ -3,18 +3,266 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MapleX</title>
-    <!-- External stylesheet for page styling -->
+    <title>MapleX — Dustin Becker | AI-native software & technical leadership</title>
+
+    <meta name="description" content="MapleX is the consultancy of Dustin Becker, PhD — a technical leader and AI-native full-stack engineer who ships software products. Past work spans gldt.org, Origyn, Spectral Waves, and ETH's PerfusionX liver perfusion project." />
+    <meta name="keywords" content="MapleX, Dustin Becker, AI software consultant, full-stack engineer, technical leader, PhD engineer, medical engineering, liver perfusion, Liver4Life, PerfusionX, ETH Zurich, GLDT, Origyn, Spectral Waves" />
+    <meta name="author" content="Dustin Becker" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maplex.ch/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MapleX — AI-native software & technical leadership" />
+    <meta property="og:description" content="Dustin Becker, PhD: technical leader and AI-native full-stack engineer. Shipped products for ETH Zurich, Origyn, GLDT, Spectral Waves." />
+    <meta property="og:url" content="https://maplex.ch/" />
+    <meta property="og:image" content="https://maplex.ch/logo.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MapleX — AI-native software & technical leadership" />
+    <meta name="twitter:description" content="Dustin Becker, PhD — technical leader and AI-native full-stack engineer." />
+    <meta name="twitter:image" content="https://maplex.ch/logo.svg" />
+
     <link rel="stylesheet" href="styles.css" />
-    <!-- Use the SVG logo as the favicon. Modern browsers support SVG favicons,
-         which ensures the logo remains crisp on high‑resolution displays. -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://maplex.ch/#dustin-becker",
+            "name": "Dustin Becker",
+            "honorificSuffix": "PhD",
+            "jobTitle": "Founder & Principal Engineer",
+            "description": "Technical leader and AI-native full-stack software engineer. PhD in engineering with a research background in medical engineering and liver perfusion.",
+            "email": "mailto:dustinbecker91@gmail.com",
+            "worksFor": { "@id": "https://maplex.ch/#organization" },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "ETH Zurich"
+            },
+            "knowsAbout": [
+              "AI-assisted software engineering",
+              "Full-stack web development",
+              "Technical leadership",
+              "Medical engineering",
+              "Liver perfusion research",
+              "Product engineering"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://maplex.ch/#organization",
+            "name": "MapleX",
+            "url": "https://maplex.ch/",
+            "logo": "https://maplex.ch/logo.svg",
+            "founder": { "@id": "https://maplex.ch/#dustin-becker" },
+            "description": "MapleX is a boutique technical consultancy: AI-native software engineering, full-stack product delivery, and engineering leadership.",
+            "areaServed": "Worldwide",
+            "knowsAbout": [
+              "AI integration",
+              "Full-stack development",
+              "Engineering leadership",
+              "Medical engineering"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <!-- Container to center the logo -->
-    <div class="logo-container">
-      <!-- Reference the separate SVG logo -->
-      <img src="logo.svg" alt="Logo" class="logo" />
-    </div>
+    <header class="site-header">
+      <a href="#top" class="brand" aria-label="MapleX home">
+        <img src="logo.svg" alt="MapleX" class="brand-logo" />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#work">Work</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">MapleX — Dustin Becker, PhD</p>
+          <h1>AI-native software, shipped by an engineer who's led teams and built real products.</h1>
+          <p class="lede">
+            I'm a PhD engineer and technical leader. I help founders and research teams turn ambitious ideas into production software — full-stack, AI-augmented, and grounded in two decades of engineering rigor.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Start a conversation</a>
+            <a class="btn btn-ghost" href="#work">See selected work</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-inner">
+          <h2>About</h2>
+          <div class="about-grid">
+            <div>
+              <p class="bio-lead">
+                Hi, I'm Dustin. I founded MapleX to do the kind of engineering work I love most: small teams, hard problems, software that ships.
+              </p>
+              <p>
+                My background is unusual on purpose. I hold a PhD in engineering and spent years in medical engineering research — including the <strong>Liver4Life</strong> project, where my team kept human livers alive outside the body for a week. That work taught me how to operate at the edge of what's possible while staying obsessive about reliability.
+              </p>
+              <p>
+                Today I run MapleX as a technical leader and hands-on builder. I lead product teams, architect systems, and write code — with AI woven through the whole stack. The result is software that gets to market fast without cutting the corners that matter.
+              </p>
+            </div>
+            <aside class="bio-card" aria-label="At a glance">
+              <h3>At a glance</h3>
+              <ul>
+                <li><strong>PhD</strong> in engineering</li>
+                <li><strong>Technical leader</strong> running teams &amp; shipping product</li>
+                <li><strong>Full-stack engineer</strong>, AI-native workflow</li>
+                <li><strong>Medical engineering</strong> research roots</li>
+                <li>Based in Switzerland · working globally</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="section section-alt">
+        <div class="section-inner">
+          <h2>What I do</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>AI-native product engineering</h3>
+              <p>From prototype to production: full-stack web and mobile applications built with modern AI tooling at the core, not bolted on.</p>
+            </article>
+            <article class="card">
+              <h3>Technical leadership</h3>
+              <p>Embedded as fractional CTO or tech lead — hiring, architecture, sprint cadence, and the unglamorous work of getting a team to ship reliably.</p>
+            </article>
+            <article class="card">
+              <h3>Research-grade engineering</h3>
+              <p>Bridging research and product. I've done it in medical engineering and biotech, where mistakes are expensive and standards are high.</p>
+            </article>
+            <article class="card">
+              <h3>Strategic AI integration</h3>
+              <p>Honest assessments of where AI helps, where it doesn't, and how to build the right evaluation loops so you can trust what ships.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-inner">
+          <h2>Selected work</h2>
+          <p class="section-lede">A few products I've helped design, build, or lead.</p>
+          <div class="work-grid">
+            <article class="work-item">
+              <h3><a href="https://gldt.org" target="_blank" rel="noopener noreferrer">GLDT</a></h3>
+              <p class="work-tag">Product · Web3</p>
+              <p>Gold-backed digital tokens. End-to-end product engineering, from contract design to the user-facing application.</p>
+            </article>
+            <article class="work-item">
+              <h3><a href="https://origyn.com" target="_blank" rel="noopener noreferrer">Origyn</a></h3>
+              <p class="work-tag">Product · Authentication &amp; provenance</p>
+              <p>Digital authentication for high-value physical objects. Contributed to platform engineering and product delivery.</p>
+            </article>
+            <article class="work-item">
+              <h3><a href="https://spectralwaves.com" target="_blank" rel="noopener noreferrer">Spectral Waves</a></h3>
+              <p class="work-tag">Product · AI &amp; signal analysis</p>
+              <p>A modern platform for working with spectral data. Full-stack build with AI-augmented analysis at its core.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="section section-alt">
+        <div class="section-inner">
+          <h2>Past clients &amp; collaborations</h2>
+          <div class="clients-grid">
+            <article class="client">
+              <h3>ETH Zurich</h3>
+              <p class="client-tag">Consulting · Medical engineering</p>
+              <p>
+                Consulted on <a href="https://www.perfusionx.ch/" target="_blank" rel="noopener noreferrer">PerfusionX</a>, an ETH-affiliated initiative advancing ex-vivo organ perfusion technology.
+              </p>
+            </article>
+            <article class="client">
+              <h3>Liver4Life</h3>
+              <p class="client-tag">Research · Medical engineering</p>
+              <p>
+                Long-running research collaboration that achieved week-long ex-vivo human liver perfusion — the foundation of my medical-engineering work.
+              </p>
+            </article>
+            <article class="client">
+              <h3>Origyn Foundation</h3>
+              <p class="client-tag">Product · Engineering</p>
+              <p>Platform and product engineering for digital authentication and provenance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-inner contact-inner">
+          <h2>Let's talk</h2>
+          <p class="section-lede">
+            Working on something ambitious? Tell me a little about it and I'll get back to you within a couple of days.
+          </p>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/dustinbecker91@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New MapleX inquiry" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+
+            <div class="field">
+              <label for="company">Company <span class="optional">(optional)</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" />
+            </div>
+
+            <div class="field">
+              <label for="message">What are you working on?</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-fallback">
+              Or email me directly at
+              <a href="mailto:dustinbecker91@gmail.com">dustinbecker91@gmail.com</a>.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>&copy; <span id="year"></span> MapleX · Dustin Becker</p>
+        <p class="footer-meta">AI-native software &amp; technical leadership · Switzerland</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
