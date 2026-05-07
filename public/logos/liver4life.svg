@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" role="img" aria-label="Liver4Life">
+  <g transform="translate(8 14)">
+    <path d="M16 4 C24 4, 30 10, 30 18 C30 24, 26 28, 16 30 C6 28, 2 24, 2 18 C2 10, 8 4, 16 4 Z" fill="#C8553D" opacity="0.85"></path>
+    <path d="M12 14 C14 12, 18 12, 20 14" fill="none" stroke="#FAFAF7" stroke-width="1.2" stroke-linecap="round"></path>
+  </g>
+  <text x="48" y="38" font-family="&#39;Inter&#39;, Arial, sans-serif" font-size="20" font-weight="600" fill="#111418" letter-spacing="-0.3">Liver<tspan fill="#C8553D">4</tspan>Life</text>
+</svg>

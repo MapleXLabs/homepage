@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" role="img" aria-label="DFINITY">
+  <defs>
+    <linearGradient id="dfx-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#29ABE2"></stop>
+      <stop offset="0.5" stop-color="#522785"></stop>
+      <stop offset="1" stop-color="#ED1E79"></stop>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0 14)">
+    <path d="M16 16 C16 7, 23 0, 32 0 C39 0, 44 4, 48 9 L40 17 C38 14, 35 12, 32 12 C28 12, 24 15, 24 19 C24 24, 28 27, 32 27 C35 27, 38 25, 40 22 L48 30 C44 35, 39 39, 32 39 C23 39, 16 32, 16 23 Z" fill="url(#dfx-grad)" opacity="0.92"></path>
+    <path d="M52 6 C56 1, 62 -2, 68 0 C76 2, 80 9, 80 16 C80 23, 76 30, 68 32 C62 33, 56 31, 52 26 L60 18 C61 20, 63 21, 65 21 C68 21, 70 18, 70 16 C70 13, 68 11, 65 11 C63 11, 61 12, 60 14 Z" fill="url(#dfx-grad)" opacity="0.92"></path>
+  </g>
+  <text x="92" y="40" font-family="&#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="22" font-weight="700" fill="#111418" letter-spacing="2">DFINITY</text>
+</svg>

@@ -1,0 +1,43 @@
+# MapleX — Engineering & AI consultancy
+
+> MapleX is a boutique technical consultancy delivering AI-native software,
+> full-stack product engineering, and engineering leadership. Founded by
+> Dustin Becker, PhD. Based in Zürich, Switzerland.
+
+## About
+
+MapleX is led by Dustin Becker — a PhD engineer and technical leader. The
+practice spans:
+
+- AI-native product engineering (full-stack web/mobile, LLMs, evals, agents)
+- Engineering leadership (fractional CTO, tech lead, hiring, cadence)
+- Research-grade engineering (medical engineering, biotech, regulated)
+- Blockchain & Web3 engineering (ICP / DFINITY, Gold DAO, ORIGYN, tokens)
+- Strategic AI integration (scoping, evals, ROI, vendor selection)
+
+## Founder
+
+- Name: Dustin Becker
+- Title: Founder, MapleX
+- Credentials: PhD in engineering
+- Research roots: Liver4Life — week-long ex-vivo human liver perfusion
+- Based: Zürich, Switzerland
+- Languages: English, Deutsch
+
+## Selected work
+
+- GLDT / Gold DAO — gold-backed digital tokens (https://gldt.org)
+- ORIGYN — authentication and provenance for high-value goods (https://origyn.com)
+- Spectral Waves — AI-augmented spectral signal analysis (https://spectralwaves.com)
+- PerfusionX (ETH Zürich) — ex-vivo organ perfusion (https://www.perfusionx.ch)
+- Liver4Life — research collaboration, medical engineering
+
+## Partners
+
+ETH Zürich, Liver4Life, ORIGYN, Gold DAO, DFINITY.
+
+## Contact
+
+- Email: contact@maplex.ch
+- Reply: within 2 business days
+- Location: Zürich, Switzerland
