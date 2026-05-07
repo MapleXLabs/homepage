@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Practice from './components/Practice';
@@ -7,6 +7,7 @@ import Work from './components/Work';
 import Founder from './components/Founder';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import {Analytics} from '@vercel/analytics/react';
 
 export default function App() {
   useEffect(() => {
@@ -24,7 +25,7 @@ export default function App() {
           }
         });
       },
-      { threshold: 0.12 },
+      {threshold: 0.12},
     );
     els.forEach((el) => io.observe(el));
     return () => io.disconnect();
@@ -42,6 +43,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }
