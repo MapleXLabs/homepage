@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="ETH Zürich">
+  <g fill="#111418" font-family="&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif">
+    <text x="0" y="38" font-size="42" font-weight="700" letter-spacing="2">ETH</text>
+    <text x="108" y="22" font-size="11" font-weight="400" letter-spacing="0.5">Eidgenössische Technische Hochschule</text>
+    <text x="108" y="36" font-size="11" font-weight="400" letter-spacing="0.5">Zürich</text>
+    <text x="108" y="52" font-size="9" font-weight="400" letter-spacing="0.3" fill="#6B7280">Swiss Federal Institute of Technology</text>
+  </g>
+</svg>

@@ -1,20 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MapleX</title>
-    <!-- External stylesheet for page styling -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Use the SVG logo as the favicon. Modern browsers support SVG favicons,
-         which ensures the logo remains crisp on high‑resolution displays. -->
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MapleX — AI-native software & technical leadership · Zürich</title>
+
+    <meta name="description" content="MapleX is a boutique engineering & AI consultancy in Zürich. Founded by Dustin Becker, PhD. AI-native software, full-stack product engineering, and technical leadership. Trusted by ETH Zürich, ORIGYN, Gold DAO, and DFINITY." />
+    <meta name="keywords" content="MapleX, AI consultancy, AI-native software, full-stack engineering, fractional CTO, technical leadership, medical engineering, Liver4Life, PerfusionX, ETH Zürich, Gold DAO, ORIGYN, DFINITY, ICP, Web3, Dustin Becker" />
+    <meta name="author" content="MapleX" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maplex.ch/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MapleX — AI-native software & technical leadership" />
+    <meta property="og:description" content="A boutique engineering & AI consultancy in Zürich. Founded by Dustin Becker, PhD." />
+    <meta property="og:url" content="https://maplex.ch/" />
+    <meta property="og:image" content="https://maplex.ch/maplex-mark.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/maplex-mark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://maplex.ch/#organization",
+          "name": "MapleX",
+          "url": "https://maplex.ch/",
+          "logo": "https://maplex.ch/maplex-mark.svg",
+          "description": "Boutique engineering & AI consultancy delivering AI-native software, full-stack product engineering, and technical leadership.",
+          "areaServed": "Worldwide",
+          "email": "contact@maplex.ch",
+          "address": { "@type": "PostalAddress", "addressLocality": "Zürich", "addressCountry": "CH" },
+          "founder": { "@id": "https://maplex.ch/#dustin-becker" },
+          "knowsAbout": ["AI-native software engineering","Full-stack development","Engineering leadership","Fractional CTO","Medical engineering","Liver perfusion","Blockchain engineering","ICP DFINITY ecosystem","Web3"],
+          "knowsLanguage": ["en", "de"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://maplex.ch/#dustin-becker",
+          "name": "Dustin Becker",
+          "honorificSuffix": "PhD",
+          "jobTitle": "Founder, Technical Leader",
+          "worksFor": { "@id": "https://maplex.ch/#organization" },
+          "description": "PhD engineer and technical leader. Research roots in Liver4Life. Builds AI-native software and leads engineering teams.",
+          "knowsAbout": ["AI","Full-stack engineering","Medical engineering","Blockchain","ICP","DFINITY"]
+        },
+        { "@type": "Service", "name": "AI-native product engineering", "provider": { "@id": "https://maplex.ch/#organization" }, "description": "Full-stack web and mobile applications with AI woven through the stack." },
+        { "@type": "Service", "name": "Engineering leadership", "provider": { "@id": "https://maplex.ch/#organization" }, "description": "Embedded fractional CTO and tech-lead engagements." },
+        { "@type": "Service", "name": "Research-grade engineering", "provider": { "@id": "https://maplex.ch/#organization" }, "description": "Bridging research and product in medical engineering and biotech." },
+        { "@type": "Service", "name": "Blockchain & Web3 engineering", "provider": { "@id": "https://maplex.ch/#organization" }, "description": "Production work on the ICP / DFINITY ecosystem." },
+        { "@type": "Service", "name": "Strategic AI integration", "provider": { "@id": "https://maplex.ch/#organization" }, "description": "Scoping where AI helps, evaluation loops, ROI, vendor selection." },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is MapleX?", "acceptedAnswer": { "@type": "Answer", "text": "MapleX is a boutique engineering & AI consultancy in Zürich, Switzerland." } },
+            { "@type": "Question", "name": "Who founded MapleX?", "acceptedAnswer": { "@type": "Answer", "text": "MapleX was founded by Dustin Becker, PhD." } },
+            { "@type": "Question", "name": "What clients has MapleX worked with?", "acceptedAnswer": { "@type": "Answer", "text": "Partners include ETH Zürich (PerfusionX), ORIGYN, Gold DAO (GLDT), and DFINITY." } },
+            { "@type": "Question", "name": "How do I hire MapleX?", "acceptedAnswer": { "@type": "Answer", "text": "Use the contact form or email contact@maplex.ch." } }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <!-- Container to center the logo -->
-    <div class="logo-container">
-      <!-- Reference the separate SVG logo -->
-      <img src="logo.svg" alt="Logo" class="logo" />
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
