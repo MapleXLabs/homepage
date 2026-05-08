@@ -88,8 +88,8 @@ export default function Contact() {
               ></textarea>
             </Field>
 
-            <div className='flex items-center justify-between gap-4 pt-2'>
-              <button type='submit' className='btn btn-primary'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2'>
+              <button type='submit' className='btn btn-primary self-start whitespace-nowrap'>
                 Send message <span aria-hidden='true'>→</span>
               </button>
               <span className='font-mono text-[11px] tracking-[0.08em] uppercase text-neutral-500'>
