@@ -50,9 +50,10 @@ export default function Work() {
         />
 
         <div className="divide-y divide-neutral-300 border-t border-neutral-300">
-          {items.map((it) => {
+          {items.map((it, i) => {
             const className =
-              'grid grid-cols-1 lg:grid-cols-[1.2fr_2fr_1fr_30px] gap-6 py-8 no-underline text-inherit group';
+              'reveal grid grid-cols-1 lg:grid-cols-[1.2fr_2fr_1fr_30px] gap-6 py-8 no-underline text-inherit group';
+            const style = {['--reveal-delay' as string]: `${i * 80}ms`} as React.CSSProperties;
             const inner = (
               <>
                 <div>
@@ -65,11 +66,11 @@ export default function Work() {
               </>
             );
             return it.url ? (
-              <a key={it.name} className={className + ' hover:bg-neutral-100 transition-colors'} href={it.url} target="_blank" rel="noopener noreferrer">
+              <a key={it.name} style={style} className={className + ' hover:bg-neutral-100 transition-colors'} href={it.url} target="_blank" rel="noopener noreferrer">
                 {inner}
               </a>
             ) : (
-              <div key={it.name} className={className}>
+              <div key={it.name} style={style} className={className}>
                 {inner}
               </div>
             );

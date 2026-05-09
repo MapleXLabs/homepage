@@ -35,31 +35,36 @@ const items = [
 
 export default function Practice() {
   return (
-    <section id="practice" className="py-24 border-b border-neutral-300">
-      <div className="container-x">
+    <section id='practice' className='py-24 border-b border-neutral-300'>
+      <div className='container-x'>
         <SectionHeader
-          number="01"
-          label="Practice"
-          title="Small, senior teams. AI-native build practice. Engineering rigor that lasts."
-          description="MapleX takes on a handful of engagements at a time. Five things we do, in plain language."
+          number='01'
+          label='Practice'
+          title='Small, senior teams. AI-native build practice. Engineering rigor that lasts.'
+          description='MapleX takes on a handful of engagements at a time. Five things we do, in plain language.'
         />
 
         <div>
-          {items.map((it) => (
+          {items.map((it, i) => (
             <article
               key={it.n}
-              className="group relative -mt-px border-y border-neutral-300 hover:border-ink hover:z-10 transition-colors duration-300 ease-out grid grid-cols-1 lg:grid-cols-[60px_1fr_280px] gap-6 py-8 reveal"
+              style={{['--reveal-delay' as string]: `${i * 80}ms`}}
+              className='group relative -mt-px border-y border-neutral-300 hover:border-ink hover:z-10 transition-colors duration-300 ease-out grid grid-cols-1 lg:grid-cols-[60px_1fr_280px] gap-6 py-8 reveal'
             >
-              <div className="font-mono text-[14px] text-neutral-500 group-hover:text-ink transition-colors duration-300 ease-out">{it.n}</div>
-              <div>
-                <h3 className="font-display text-[24px] text-ink mb-2 group-hover:text-accent transition-colors duration-300 ease-out">{it.title}</h3>
-                <p className="text-[16px] text-neutral-700 max-w-[60ch]">{it.body}</p>
+              <div className='font-mono text-[14px] text-neutral-500 group-hover:text-ink transition-colors duration-300 ease-out'>
+                {it.n}
               </div>
-              <div className="flex flex-wrap gap-1.5 content-start">
+              <div>
+                <h3 className='font-display text-[24px] text-ink mb-2 group-hover:text-accent transition-colors duration-300 ease-out'>
+                  {it.title}
+                </h3>
+                <p className='text-[16px] text-neutral-700 max-w-[60ch]'>{it.body}</p>
+              </div>
+              <div className='flex flex-wrap gap-1.5 content-start'>
                 {it.keywords.map((k) => (
                   <span
                     key={k}
-                    className="font-mono text-[11px] uppercase tracking-[0.06em] text-neutral-700 border border-neutral-300 px-2 py-1 rounded-sm"
+                    className='font-mono text-[11px] uppercase tracking-[0.06em] text-neutral-700 border border-neutral-300 px-2 py-1 rounded-sm'
                   >
                     {k}
                   </span>

@@ -7,7 +7,7 @@ type Props = {
 
 export default function SectionHeader({ number, label, title, description }: Props) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-12 mb-12">
+    <div className="reveal grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-12 mb-12">
       <div>
         <div className="font-display font-normal text-ink text-[clamp(1.75rem,3.5vw,2.5rem)] leading-tight tracking-tight">
           {number}

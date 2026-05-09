@@ -3,7 +3,7 @@ export default function Contact() {
     <section id='contact' className='py-24'>
       <div className='container-x'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
-          <div>
+          <div className='reveal'>
             <p className='eyebrow'>Contact</p>
             <h2 className='display-h2'>Let's talk.</h2>
             <p className='mt-6 text-[17px] text-neutral-700 max-w-[55ch]'>
@@ -34,7 +34,8 @@ export default function Contact() {
           </div>
 
           <form
-            className='border border-ink p-8 bg-paper space-y-5'
+            className='reveal border border-ink p-8 bg-paper space-y-5'
+            style={{['--reveal-delay' as string]: '120ms'}}
             action='https://formsubmit.co/contact@maplex.ch'
             method='POST'
           >

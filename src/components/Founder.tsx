@@ -11,7 +11,7 @@ export default function Founder() {
         />
 
         <div className='grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-10 items-start'>
-          <div className='aspect-[4/5] border border-ink overflow-hidden'>
+          <div className='reveal aspect-[4/5] border border-ink overflow-hidden'>
             <img
               src='/dustin-becker.jpg'
               alt='Dustin Becker, founder of MapleX'
@@ -19,7 +19,10 @@ export default function Founder() {
             />
           </div>
 
-          <div className='text-[17px] text-neutral-700 leading-[1.7] max-w-[60ch] space-y-4'>
+          <div
+            className='reveal text-[17px] text-neutral-700 leading-[1.7] max-w-[60ch] space-y-4'
+            style={{['--reveal-delay' as string]: '100ms'}}
+          >
             <h3 className='font-display text-[28px] text-ink m-0'>Dustin Becker, PhD</h3>
             <p className='font-mono text-[11px] tracking-[0.12em] uppercase text-neutral-500 m-0'>
               Founder · Technical leader · Engineer
@@ -47,7 +50,11 @@ export default function Founder() {
             <p>He runs teams, ships product, and writes code — from research lab to production.</p>
           </div>
 
-          <aside className='border border-ink p-6 bg-paper' aria-label='Credentials'>
+          <aside
+            className='reveal border border-ink p-6 bg-paper'
+            aria-label='Credentials'
+            style={{['--reveal-delay' as string]: '200ms'}}
+          >
             <div className='font-mono text-[11px] tracking-[0.12em] uppercase text-neutral-500 mb-4'>
               Credentials
             </div>

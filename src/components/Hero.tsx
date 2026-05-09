@@ -1,8 +1,21 @@
+import {useEffect, useState} from 'react';
+
 export default function Hero() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener('scroll', onScroll, {passive: true});
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <header id='top' className='border-b border-neutral-300 py-24'>
-      <div className='container-x'>
-        <p className='eyebrow'>MapleX — Engineering &amp; AI consultancy · Zürich</p>
+    <header
+      id='top'
+      className='relative border-b border-neutral-300 pt-16 pb-10 min-h-[calc(100svh-72px)] flex'
+    >
+      <div className='container-x w-full flex flex-col justify-center'>
+        <p className='reveal in eyebrow'>MapleX — Engineering &amp; AI consultancy · Zürich</p>
         <div className='grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-12 items-end'>
           <div className='reveal in'>
             <h1 className='display-h1 max-w-[14ch]'>
@@ -27,7 +40,7 @@ export default function Hero() {
             </div>
           </div>
           <aside
-            className='justify-self-end w-full max-w-sm border-t border-neutral-300 pt-4'
+            className='reveal in justify-self-end w-full max-w-sm border-t border-neutral-300 pt-4'
             aria-label='At a glance'
           >
             <div className='font-mono text-[11px] tracking-[0.12em] uppercase text-neutral-500 mb-4'>
@@ -50,7 +63,31 @@ export default function Hero() {
           </aside>
         </div>
 
-        <div className='mt-16 grid grid-cols-2 lg:grid-cols-4 gap-x-0'>
+        <a
+          href='#practice'
+          aria-label='Scroll to next section'
+          className={`absolute left-1/2 -translate-x-1/2 bottom-5 flex flex-col items-center gap-1.5 text-neutral-500 hover:text-ink no-underline transition-opacity duration-500 ${
+            scrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          }`}
+        >
+          <span className='scroll-hint font-mono text-[10px] tracking-[0.18em] uppercase'>
+            Scroll
+          </span>
+          <svg
+            className='scroll-hint h-3 w-3'
+            viewBox='0 0 12 12'
+            fill='none'
+            stroke='currentColor'
+            strokeWidth='1.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            aria-hidden='true'
+          >
+            <path d='M3 5l3 3 3-3' />
+          </svg>
+        </a>
+
+        <div className='reveal in mt-24 grid grid-cols-2 lg:grid-cols-4 gap-x-0'>
           {[
             ['Practice', 'AI-native build'],
             ['Domain', 'Web · Web3 · medical'],

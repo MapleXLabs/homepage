@@ -41,13 +41,14 @@ export default function Partners() {
         />
 
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 border-t border-l border-ink bg-paper'>
-          {partners.map((p) => (
+          {partners.map((p, i) => (
             <a
               key={p.name}
               href={p.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='group relative h-[130px] flex flex-col items-center justify-center gap-1.5 px-4 pt-7 pb-3.5 border-r border-b border-ink no-underline text-inherit hover:bg-neutral-100 transition-colors'
+              style={{['--reveal-delay' as string]: `${i * 60}ms`}}
+              className='reveal group relative h-[130px] flex flex-col items-center justify-center gap-1.5 px-4 pt-7 pb-3.5 border-r border-b border-ink no-underline text-inherit hover:bg-neutral-100 transition-colors'
             >
               <span className='absolute top-2.5 left-3 font-mono text-[10px] tracking-[0.1em] uppercase text-neutral-500'>
                 {p.tag}
@@ -62,7 +63,7 @@ export default function Partners() {
           ))}
         </div>
 
-        <div className='mt-12 grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-12'>
+        <div className='reveal mt-12 grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-12'>
           <div className='font-mono text-[11px] tracking-[0.12em] uppercase text-neutral-500'>
             Featured collaboration
           </div>
