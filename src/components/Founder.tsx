@@ -45,7 +45,7 @@ export default function Founder() {
               AI-augmented workflows, and the ICP / DFINITY blockchain ecosystem. Past work includes{' '}
               <strong className='text-ink font-medium'>Gold DAO</strong>,{' '}
               <strong className='text-ink font-medium'>ORIGYN</strong>, and{' '}
-              <strong className='text-ink font-medium'>Spectralwaves</strong>.
+              <strong className='text-ink font-medium'>Spectral Waves</strong>.
             </p>
             <p>He runs teams, ships product, and writes code — from research lab to production.</p>
           </div>

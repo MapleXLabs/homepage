@@ -22,7 +22,7 @@ const partners = [
     url: 'https://www.perfusionx.ch',
   },
   {
-    name: 'Spectralwaves',
+    name: 'Spectral Waves',
     tag: 'AI · signal analysis',
     logo: '/logos/spectral.png',
     url: 'https://spectralwaves.com',

@@ -18,7 +18,7 @@ const items = [
     url: 'https://origyn.com',
   },
   {
-    name: 'Spectralwaves',
+    name: 'Spectral Waves',
     tag: 'Product · AI financial analysis',
     blurb:
       'A modern platform for working with spectral data. Full-stack build with AI-augmented analysis at its core.',

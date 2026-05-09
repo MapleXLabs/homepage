@@ -28,7 +28,7 @@ export default function Footer() {
               ORIGYN ↗
             </a>
             <a href='https://spectralwaves.com' target='_blank' rel='noopener noreferrer'>
-              Spectralwaves ↗
+              Spectral Waves ↗
             </a>
             <a href='https://www.perfusionx.ch' target='_blank' rel='noopener noreferrer'>
               PerfusionX (ETH) ↗
